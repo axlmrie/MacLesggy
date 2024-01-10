@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    height: 100%;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+nav{
+    height: 100%;
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 70%;
+}
+h1{
+    border-bottom: 2px solid black;
+}
+nav>h2{
+    margin-top: 0px;
+}
+#historique{
+    display: flex;
+    justify-content: space-around;
+}
+.jour{
+    border: 2px solid black ;
+    padding: 5%;
+}
+.valeur{
+    border: 2px solid black;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+}
+#donnee{
+    display: flex;
+    justify-content: space-around;
+}
