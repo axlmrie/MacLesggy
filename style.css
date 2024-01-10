@@ -1,30 +1,57 @@
-body{
+body {
     margin: 0;
-    height: 100%;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 0;
+    width: 200px;
+}
+
+main {
+
+    flex: 1;
+    padding: 10px;
+
+}
+
+aside {
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 200px;
+}
+
+section {
+    width: calc(100% - 420px); /* Calcul pour ajuster la largeur */
+    padding: 10px;
+    background-color: #e0e0e0;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+}
+
+h1 {
     text-align: center;
-}
-ul{
-    list-style: none;
-}
-nav{
-    height: 100%;
-    float: left;
-    margin-top: 0px;
-    margin-bottom: 70%;
-}
-h1{
     border-bottom: 2px solid black;
 }
-nav>h2{
-    margin-top: 0px;
+h2{
+    text-align: center;
 }
-#historique{
-    display: flex;
-    justify-content: space-around;
+
+ul {
+    list-style: none;
 }
-.jour{
-    border: 2px solid black ;
-    padding: 5%;
+
+nav > ul > li {
+    padding-top: 30%;
+    font-size: 130%;
 }
 .valeur{
     border: 2px solid black;
@@ -36,4 +63,18 @@ nav>h2{
 #donnee{
     display: flex;
     justify-content: space-around;
+}
+#historique{
+    display: flex;
+    justify-content: space-around;
+}
+.jour{
+    border: 2px solid black ;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+#img{
+    text-align: center;
 }
