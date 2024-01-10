@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+body { 
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(backroung.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Inter', sans-serif;
+}
+
+label {
+    display: inline-block;
+    width: 180px;
+}
+
+input,
+textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+}
+
+div {
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.3px);
+    -webkit-backdrop-filter: blur(2.3px);
+    border: 2px solid rgba(255, 255, 255, 1);
+    margin-right: 36%;
+    margin-left: 36%;
+    margin-top: 10%;
+    border-radius: 30px;
+    text-align: center;
+    color: black;
+}
+
+#button_confirmer {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid white
+}
+
+.espace {
+    margin-bottom: 8px;
+}
+
+#titre {
+    color: black;
+}

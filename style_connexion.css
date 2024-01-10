@@ -43,7 +43,7 @@
         margin-right: 35%;
         margin-left: 35%;
         margin-top: 15%;
-        border-radius: 40px;
+        border-radius: 30px;
         text-align: center;
         color: black;
       }
@@ -57,6 +57,7 @@
         border-radius: 5px;
         font-size: 16px;
         padding: 10px;
+        border: 2px solid white;
       }
 
       #titre{
