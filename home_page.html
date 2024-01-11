@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>MacLesggi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.css" />
     <link rel="stylesheet" href="style.css"> <!-- Assurez-vous de lier votre fichier CSS -->
 </head>
 <body>
     <header>
         <nav>
-            <H2>MacLesggi</H2>
+            <H3>MacLesggi</H3>
             <ul id="nav-bar">
                 <li id="active">Home</li>
                 <li>Calendar</li>
@@ -18,32 +19,60 @@
     </header>
     <main>
         <h1 id='p1'></h1>
-     
-       
-           
-            <script>
-                        let date = new Date();
-                        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                        let dateFrancaise = date.toLocaleDateString('fr-FR', options);
-                        document.getElementById('p1').innerHTML = dateFrancaise;
-            </script></section>
-            <h2>Aperçu du temps</h2>
+        <script>
+            let date = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            let dateFrancaise = date.toLocaleDateString('fr-FR', options);
+            document.getElementById('p1').innerHTML = dateFrancaise;
+        </script>
+        <h3>Aperçu du temps</h3>
 
-            <ul id="donnee" >
-                <li class="valeur" >Humidity</li>
-                <li class="valeur" >Temperature</li>
-                <li class="valeur" >Pression</li>
-            </ul>
-            <h2>Historique Meteo</h2>
-    <ul id="historique">
-        <li class="jour">JEU</li>
-        <li class="jour">VEN</li>
-        <li class="jour">SAM</li>
-        <li class="jour">DIM</li>
-        <li class="jour">LUN</li>
-        <li class="jour">MAR</li>
-    </ul>
-    <img id="img" src="img.png" alt="graph">
+        <ul id="donnee" >
+            <li class="valeur" >Humidity</li>
+            <li class="valeur" >Temperature</li>
+            <li class="valeur" >Pression</li>
+        </ul>
+        <h3>Historique Meteo</h3>
+        <ul id="historique">
+            <li class="jour">JEU</li>
+            <li class="jour">VEN</li>
+            <li class="jour">SAM</li>
+            <li class="jour">DIM</li>
+            <li class="jour">LUN</li>
+            <li class="jour">MAR</li>
+        </ul>
+        <!-- Ajoutez cette balise canvas avec l'ID barChart -->
+        <canvas id="barChart" width="400" height="200"></canvas>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+        <script>
+            // Données
+            let categories = ['Catégorie 1', 'Catégorie 2', 'Catégorie 3', 'Catégorie 4'];
+            let valeurs = [10, 24, 15, 30];
+
+            // Création d'un graphique à barres
+            let ctx = document.getElementById('barChart').getContext('2d');
+            let barChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: categories,
+                    datasets: [{
+                        label: 'Graphique à Barres',
+                        data: valeurs,
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        </script>
     </main>
 </body>
 </html>

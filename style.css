@@ -15,7 +15,8 @@ header {
 main {
 
     flex: 1;
-    padding: 10px;
+    padding: 0px;
+    background-color: #DAdCDb;
 
 }
 
@@ -39,10 +40,16 @@ nav {
 
 h1 {
     text-align: center;
+    margin-top: 0;
     border-bottom: 2px solid black;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    background-color: #ebe7df;
 }
-h2{
+h3{
     text-align: center;
+    font-size: 130%;
+    margin-top: 5%;
 }
 
 ul {
@@ -59,14 +66,17 @@ nav > ul > li {
     padding-left: 0%;
     padding-right: 3%;
     padding-bottom: 3%;
+    background-color: #ebe7df;
 }
 #donnee{
     display: flex;
     justify-content: space-around;
+    padding-top:3% ;
 }
 #historique{
     display: flex;
     justify-content: space-around;
+    padding-top:3% ;
 }
 .jour{
     border: 2px solid black ;
@@ -74,6 +84,7 @@ nav > ul > li {
     padding-left: 0%;
     padding-right: 5%;
     padding-bottom: 5%;
+    background-color: #ebe7df;
 }
 #img{
     text-align: center;
