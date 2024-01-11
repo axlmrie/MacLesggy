@@ -17,7 +17,7 @@ label {
 input,
 textarea {
     font: 1em sans-serif;
-    width: 300px;
+    width: 90%;
     box-sizing: border-box;
     border: 1px solid #000000;
 }
@@ -56,3 +56,16 @@ div {
 #titre {
     color: black;
 }
+@media screen and (max-width: 1149px) {
+   
+    body{
+        background-image: url(https://cdn.pixabay.com/photo/2018/03/29/07/35/water-3271579_1280.jpg);
+    }
+  }
+  @media screen and (max-width: 674px) {
+   
+    div{
+        margin-right: 30%;
+        margin-left: 30%;
+    }
+  }
