@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 
-body { 
+body {
     text-align: center;
     margin: 0 auto;
     background-image: url(backroung.jpeg);
@@ -56,16 +56,18 @@ div {
 #titre {
     color: black;
 }
+
 @media screen and (max-width: 1149px) {
-   
-    body{
+
+    body {
         background-image: url(https://cdn.pixabay.com/photo/2018/03/29/07/35/water-3271579_1280.jpg);
     }
-  }
-  @media screen and (max-width: 674px) {
-   
-    div{
+}
+
+@media screen and (max-width: 674px) {
+
+    div {
         margin-right: 30%;
         margin-left: 30%;
     }
-  }
+}
