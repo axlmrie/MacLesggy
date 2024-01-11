@@ -78,3 +78,9 @@ nav > ul > li {
 #img{
     text-align: center;
 }
+@media screen and (max-width: 600px) {
+    /* Modifier les styles pour les écrans de 600px de largeur ou moins */
+    body {
+      color: red; /* Modifier le padding pour s'adapter à des écrans plus petits */
+    }
+  }
