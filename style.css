@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 0;
+    width: 200px;
+}
+
+main {
+
+    flex: 1;
+    padding: 0px;
+    background-color: #DAdCDb;
+
+}
+
+aside {
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 200px;
+}
+
+section {
+    width: calc(100% - 420px); /* Calcul pour ajuster la largeur */
+    padding: 10px;
+    background-color: #e0e0e0;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 2px solid black;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    background-color: #ebe7df;
+}
+h3{
+    text-align: center;
+    font-size: 130%;
+    margin-top: 5%;
+}
+
+ul {
+    list-style: none;
+}
+
+nav > ul > li {
+    padding-top: 30%;
+    font-size: 130%;
+}
+.valeur{
+    border: 2px solid black;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    background-color: #ebe7df;
+}
+#donnee{
+    display: flex;
+    justify-content: space-around;
+    padding-top:3% ;
+}
+#historique{
+    display: flex;
+    justify-content: space-around;
+    padding-top:3% ;
+}
+.jour{
+    border: 2px solid black ;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    background-color: #ebe7df;
+}
+#img{
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    /* Modifier les styles pour les écrans de 600px de largeur ou moins */
+    body {
+      color: red; /* Modifier le padding pour s'adapter à des écrans plus petits */
+    }
+  }
