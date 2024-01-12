@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+       
+      .button {
+        background-color: black;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 2rem;
+        display: inline-block;
+      }
+
+      body { 
+        text-align: center;
+        margin: 0 auto;
+        background-image: url(backroung.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Inter', sans-serif;
+      }
+
+      label {
+        display: inline-block;
+        width: 180px;
+      }
+
+      input,
+      textarea {
+        font: 1em sans-serif;
+        width: 90%;
+        box-sizing: border-box;
+        border: 1px solid #000000;
+      }
+
+      div {
+        background: rgba(255, 255, 255, 0.65);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.3px);
+        -webkit-backdrop-filter: blur(2.3px);
+        border: 2px solid rgba(255, 255, 255, 1);
+        margin-right: 35%;
+        margin-left: 35%;
+        margin-top: 15%;
+        border-radius: 30px;
+        text-align: center;
+        color: black;
+      }
+
+      #button_connexion {
+        margin-top: 5%;
+        margin-bottom: 2%;
+        text-align: center;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 10px;
+        border: 2px solid white;
+      }
+
+      #titre{
+        color: black;
+      }
+
+      @media screen and (max-width: 1149px) {
+   
+        body{
+            background-image: url(https://cdn.pixabay.com/photo/2018/03/29/07/35/water-3271579_1280.jpg);
+        }
+      }
+      @media screen and (max-width: 674px) {
+       
+        div{
+            margin-right: 30%;
+            margin-left: 30%;
+        }
+      }
